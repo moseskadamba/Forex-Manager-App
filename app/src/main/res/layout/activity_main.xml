@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Citizen Intergrated System"
-            android:textColor="@color/colorAccent"
+            android:textColor="#F4511E"
             android:textSize="25sp"
             android:textStyle="bold"
             android:layout_gravity="center"/>
@@ -25,13 +25,12 @@
             android:src="@drawable/mylogo"
             android:layout_marginTop="50dp"/>
         <TextView
-            android:id="@+id/admin"
+            android:id="@+id/login_tx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            android:layout_below="@+id/password"
             android:background="@drawable/round_pinkbtn"
             android:textColor="#fff"
             android:gravity="center_horizontal"
@@ -40,13 +39,12 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"/>
         <TextView
-            android:id="@+id/citizen"
+            android:id="@+id/signup_tx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Create Account"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
-            android:layout_below="@+id/password"
             android:background="@drawable/round_pinkbtn"
             android:textColor="#fff"
             android:gravity="center_horizontal"

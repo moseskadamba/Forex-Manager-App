@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup">
+    android:background="@color/colorPrimaryDark">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="Create Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:id="@+id/textView" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/FullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColorHint="#000"
+            android:inputType="textPersonName"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:hint="Full Name e.g. John Green"/>
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColorHint="#000"
+            android:inputType="textPersonName"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:hint="Email Address"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColorHint="#000"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:hint="Username"/>
+
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColorHint="#000"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+        <EditText
+            android:id="@+id/rePassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:textColorHint="#000"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:hint="Retype Password"/>
+        <Button
+            android:text="Create Account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:id="@+id/btnCreateAccount" />
+        <Button
+            android:text="Login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:id="@+id/btnCancel" />
+    </LinearLayout>
+
+</ScrollView>
+
